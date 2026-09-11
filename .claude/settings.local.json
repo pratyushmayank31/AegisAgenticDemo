@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python *)",
+      "Bash(python3 *)",
+      "Bash(cat)",
+      "Read(//tmp/**)",
+      "Bash(command -v jq)",
+      "Bash(claude --version)",
+      "Bash(/Users/pmayank/workspace/LdcDemo/.venv/bin/python -m unittest /Users/pmayank/workspace/LdcDemo/.claude/hooks/test_protect_secrets.py -v)",
+      "Bash(/Users/pmayank/workspace/LdcDemo/.venv/bin/python -m unittest .claude.hooks.test_protect_secrets -v)",
+      "Bash(.venv/bin/python .claude/hooks/protect_secrets.py)",
+      "Bash(.venv/bin/python -m pip list)",
+      "Bash(.venv/bin/python -m py_compile --help)",
+      "Bash(.venv/bin/python *)",
+      "Bash(chmod +x .claude/hooks/quality_check.py .claude/hooks/test_quality_check.py)",
+      "Bash(/Users/pmayank/workspace/LdcDemo/.venv/bin/python *)",
+      "Bash(git *)",
+      "Bash(sqlite3 /Users/pmayank/workspace/LdcDemo/data/finance_demo.db \"PRAGMA table_info\\(exception_cases\\);\")",
+      "Bash(pkill -f \"pytest tests/\")",
+      "Bash(grep -E \"\\\\.py$\")"
+    ]
+  }
+}

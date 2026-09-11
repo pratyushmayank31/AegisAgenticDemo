@@ -1,0 +1,21 @@
+# Finance Invoice Processing System - Direct Dependencies
+#
+# Kailash: Workflow orchestration and agent framework
+kailash==2.63.0
+kailash-dataflow==2.20.0
+kailash-kaizen==2.46.0
+kailash-mcp==0.5.1
+kailash-pact==0.18.0
+
+# Database and async I/O
+aiosqlite==0.22.1
+asyncpg==0.31.0
+
+# HTTP client
+httpx==0.28.1
+httpx-sse==0.4.3
+
+# PDF processing and OCR
+pymupdf==1.28.2
+pytesseract==0.3.13
+Pillow==11.2.0
