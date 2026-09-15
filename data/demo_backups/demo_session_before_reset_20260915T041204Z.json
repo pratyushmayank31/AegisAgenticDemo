@@ -1,0 +1,32 @@
+{
+  "baseline_captured_at": "2026-09-15T04:10:58.770187+00:00",
+  "before_processing_counts": {
+    "approval_requests": 0,
+    "business_audit_events": 0,
+    "event_receipts": 0,
+    "finance_decisions": 0,
+    "invoice_cases": 0,
+    "posting_records": 0
+  },
+  "case_mode": "FRESH_PROCESSING",
+  "case_reference": "LOCAL-B970E86BB68E",
+  "completed_chapters": [
+    "02_CASE_PREPARATION"
+  ],
+  "correlation_id": "CORR-4B6B603681104EC48A91E8C5D8FF46DF",
+  "database_path": "/Users/pmayank/workspace/LdcDemo/data/finance_demo.db",
+  "document_hash": "b970e86bb68e614168596a5e966c82298d707421bd40bb3e01b43a87fc99273f",
+  "document_hash_algorithm": "SHA-256",
+  "event_id": "EVT-FE78DC5C44FF4612830A913AEB834137",
+  "invoice_filename": "01_Veson_Bunker_Clean_STP.pdf",
+  "invoice_path": "/Users/pmayank/workspace/LdcDemo/sample_invoices/01_Veson_Bunker_Clean_STP.pdf",
+  "invoice_size_bytes": 45023,
+  "pdf_is_valid": true,
+  "pdf_page_count": 1,
+  "prior_evidence_found": false,
+  "project_root": "/Users/pmayank/workspace/LdcDemo",
+  "session_created_at": "2026-09-15T04:10:58.781532+00:00",
+  "session_status": "CASE_PREPARED",
+  "session_updated_at": "2026-09-15T04:10:58.782508+00:00",
+  "session_version": "1.0"
+}

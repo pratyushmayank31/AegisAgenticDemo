@@ -18,7 +18,9 @@
       "Bash(git *)",
       "Bash(sqlite3 /Users/pmayank/workspace/LdcDemo/data/finance_demo.db \"PRAGMA table_info\\(exception_cases\\);\")",
       "Bash(pkill -f \"pytest tests/\")",
-      "Bash(grep -E \"\\\\.py$\")"
+      "Bash(grep -E \"\\\\.py$\")",
+      "Bash(grep -r \"owner_role\\\\|organization_unit\\\\|application.*create\" /Users/pmayank/workspace/LdcDemo --include=\"*.py\" ! -path \"*/vendor/*\" -B 2 -A 2)",
+      "Artifact"
     ]
   }
 }

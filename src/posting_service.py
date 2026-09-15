@@ -25,7 +25,7 @@ from typing import Optional
 from pydantic import BaseModel, Field, ConfigDict
 
 from kailash import WorkflowBuilder, LocalRuntime
-from kailash.nodes.code import PythonCodeNode
+from kailash.nodes import HandlerNode
 
 from src.database import db
 from src.intake_service import generate_case_id, generate_audit_id, generate_correlation_id
@@ -373,16 +373,19 @@ class PostingService:
 
             # Build workflow with stable node ID
             builder = WorkflowBuilder()
-            posting_node = PythonCodeNode(posting_handler)
-            node_id = builder.add_node(posting_node, "simulate_finance_posting")
+            handler_node = HandlerNode(handler=posting_handler)
+            node_id = builder.add_node(handler_node, "simulate_finance_posting")
             workflow = builder.build(workflow_id="posting_workflow")
 
-            # Execute workflow with LocalRuntime
-            runtime = LocalRuntime()
-            execution_result, workflow_run_id = runtime.execute(workflow, parameters={})
+            # Execute workflow with LocalRuntime (use context manager)
+            with LocalRuntime() as runtime:
+                execution_result, workflow_run_id = runtime.execute(workflow, parameters={})
 
             # Extract result from execution - result is keyed by node ID
-            node_result = execution_result.get("simulate_finance_posting") if execution_result else None
+            if not execution_result or "simulate_finance_posting" not in execution_result:
+                return "", workflow_run_id or "", ""
+
+            node_result = execution_result.get("simulate_finance_posting")
             if node_result and "posting_record_id" in node_result:
                 return (
                     node_result.get("posting_record_id", ""),

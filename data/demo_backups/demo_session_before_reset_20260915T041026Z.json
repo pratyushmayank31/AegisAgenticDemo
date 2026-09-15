@@ -1,0 +1,298 @@
+{
+  "baseline_captured_at": "2026-09-14T11:45:58.686399+00:00",
+  "before_processing_counts": {
+    "approval_requests": 0,
+    "business_audit_events": 0,
+    "event_receipts": 0,
+    "finance_decisions": 0,
+    "invoice_cases": 0,
+    "posting_records": 0
+  },
+  "case_mode": "FRESH_PROCESSING",
+  "case_reference": "LOCAL-B970E86BB68E",
+  "completed_chapters": [
+    "02_CASE_PREPARATION",
+    "03_CONTROLLED_INTAKE",
+    "04_DOCUMENT_INTELLIGENCE",
+    "05_STRUCTURED_EXTRACTION",
+    "06_DECISION_AND_GOVERNANCE",
+    "07_APPROVAL_AND_POSTING"
+  ],
+  "correlation_id": "CORR-2CBC6CC15D7249CB8EE549B035F87E41",
+  "database_path": "/Users/pmayank/workspace/LdcDemo/data/finance_demo.db",
+  "document_hash": "b970e86bb68e614168596a5e966c82298d707421bd40bb3e01b43a87fc99273f",
+  "document_hash_algorithm": "SHA-256",
+  "document_intelligence": {
+    "extraction": {
+      "extraction_method": "EMBEDDED_TEXT",
+      "extractor_node_id": "extract_embedded_text",
+      "human_review_reasons": [],
+      "ocr_pages_count": 0,
+      "page_count": 1,
+      "requires_human_review": false,
+      "total_character_count": 1346,
+      "unified_text": "Northstar Marine Fuels Test\nLLC\nSUPPLIER\nINVOICE\nFictional supplier - synthetic test entity\nInvoice: NSMF-TST-260818-042\nInvoice date\nService date\nDue date\n18 Aug 2026\n16 Aug 2026\n17 Sep 2026\nCurrency\nSupplier ref.\nCustomer acct.\nUSD\nBUNK-DEL-042\nTPC-OT-TST-019\nSUPPLIER / SENDER\n88 Fictional Quayside Ave\nDemo Harbour 00088\nbilling@northstar-bunkers.example\nReg: TST-884201 | Tax: TST-ZR-042\nBILL TO\nTPC Ocean Transport Test Co. Ltd.\nSynthetic test entity\n12 Prototype Maritime Plaza\nSingapore 01812\nDept: Voyage Finance\nSERVICE / DELIVERY\nM/V Azure Meridian Test\nPort of Nereid, Berth T-7\nFictional vessel and port\nPO\nPO-VYG-TST-2608-117\nContract\nBUNKER-TST-2026-09\nVessel / IMO\nAzure Meridian Test / IMO 9900042\nVoyage\nAMR-V026-TST\nBDN\nBDN-TST-NRD-160826-77\nPort call\nPC-TST-NRD-0816\nLin\ne\nCode / description\nDate\nQty\nUOM\nUnit price\nNet\nTax\nGross\nReference\n1\nVLSFO-TST\nVLSFO bunker fuel 0.50% max\n16 Aug 2026 500.000\nMT\n610.00\n305,000.00\nZR\n0.00\n305,000.00\nPO line 10 / Voyage\n2\nDEL-TST\nBunker delivery and hose handling\n16 Aug 2026 1\nLOT\n2,400.00\n2,400.00\nZR\n0.00\n2,400.00\nPO line 20 / BDN\nTax: Illustrative zero-rated bunker treatment, ZR 0%. Not tax\nadvice.\nPayment terms\nN30 - Net 30 days. Due 17 Sep 2026.\nRemittance\nQuote invoice and customer account.\nSubtotal\nUSD 307,400.00\nTax\nUSD 0.00\nTOTAL\nUSD 307,400.00\nBalance due\nUSD 307,400.00\n\n",
+      "unified_text_sha256": "881b0ec294af66302e2f2abf16ac853ad6a60a8bebd2ec74d806a7c2a3985d06",
+      "unreadable_page_numbers": [],
+      "unreadable_pages_count": 0,
+      "warnings": [],
+      "workflow_run_id": "DOC-CORR-2CBC6CC15D7249CB8EE549B035F87E41"
+    },
+    "extraction_verified": true,
+    "profile": {
+      "extraction_method": "TEXT_READY",
+      "image_count": 0,
+      "page_count": 1,
+      "preprocessor_node_id": "profile_pdf",
+      "quality_reasons": [
+        "Sufficient embedded text: 1346.0 chars/page"
+      ],
+      "quality_status": "TEXT_READY",
+      "requires_vision": false,
+      "text_character_count": 1346,
+      "text_character_count_per_page": 1346.0
+    },
+    "profile_verified": true
+  },
+  "document_intelligence_completed_at": "2026-09-14T13:09:59.098952+00:00",
+  "event_id": "EVT-D8F95531438E44AD9BF11D984433D205",
+  "intake": {
+    "audit_event_ids": [
+      "AUD-1D24C76F5C87"
+    ],
+    "counts_after_replay": {
+      "business_audit_events": 1,
+      "event_receipts": 1,
+      "invoice_cases": 1
+    },
+    "counts_before_replay": {
+      "business_audit_events": 1,
+      "event_receipts": 1,
+      "invoice_cases": 1
+    },
+    "duplicate_protection_verified": true,
+    "event_receipt_ids": [
+      "EVT-D8F95531438E44AD9BF11D984433D205"
+    ],
+    "evidence_counts_after_intake": {
+      "business_audit_events": 1,
+      "event_receipts": 1,
+      "invoice_cases": 1
+    },
+    "evidence_verified": true,
+    "fresh_submission_result": {
+      "case_id": "LOCAL-B970E86BB68E",
+      "correlation_id": "CORR-2CBC6CC15D7249CB8EE549B035F87E41",
+      "document_hash": "b970e86bb68e614168596a5e966c82298d707421bd40bb3e01b43a87fc99273f",
+      "errors": [],
+      "event_id": "EVT-D8F95531438E44AD9BF11D984433D205",
+      "intake_status": "ACCEPTED",
+      "invoice_id": "LOCAL-B970E86BB68E",
+      "workflow_run_id": "1284757c-9dd5-4056-a7ac-c49074f9b5ca"
+    },
+    "fresh_submission_status": "ACCEPTED",
+    "invoice_case_ids": [
+      "LOCAL-B970E86BB68E"
+    ],
+    "replay_submission_result": {
+      "case_id": "LOCAL-B970E86BB68E",
+      "correlation_id": "CORR-2CBC6CC15D7249CB8EE549B035F87E41",
+      "document_hash": "b970e86bb68e614168596a5e966c82298d707421bd40bb3e01b43a87fc99273f",
+      "errors": [
+        "Event already processed"
+      ],
+      "event_id": "EVT-D8F95531438E44AD9BF11D984433D205",
+      "intake_status": "REPLAY_IGNORED",
+      "invoice_id": "LOCAL-B970E86BB68E",
+      "workflow_run_id": null
+    },
+    "replay_submission_status": "REPLAY_IGNORED"
+  },
+  "intake_completed_at": "2026-09-14T12:32:03.992230+00:00",
+  "invoice_filename": "01_Veson_Bunker_Clean_STP.pdf",
+  "invoice_path": "/Users/pmayank/workspace/LdcDemo/sample_invoices/01_Veson_Bunker_Clean_STP.pdf",
+  "invoice_size_bytes": 45023,
+  "pdf_is_valid": true,
+  "pdf_page_count": 1,
+  "prior_evidence_found": false,
+  "project_root": "/Users/pmayank/workspace/LdcDemo",
+  "session_created_at": "2026-09-14T11:48:23.940670+00:00",
+  "session_status": "APPROVAL_AND_POSTING_COMPLETED",
+  "session_updated_at": "2026-09-15T04:10:09.256175+00:00",
+  "session_version": "1.0",
+  "structured_extraction": {
+    "agent_confidence": 0.98,
+    "agent_workflow_run_id": "c0714c75-bb6d-4c55-8941-cef3676c050a",
+    "completed_at": "2026-09-14T16:01:27.996478+00:00",
+    "eligible_for_decision_intelligence": true,
+    "model": "claude-haiku-4-5",
+    "prompt_version": "invoice-extraction-v1",
+    "quality_review": {
+      "agent_requires_human_review": false,
+      "all_missing_fields": [],
+      "calculated_missing_fields": [],
+      "confidence_below_threshold": false,
+      "confidence_threshold": 0.9,
+      "document_confidence": 0.98,
+      "extraction_warnings": [
+        "Invoice marked as fictional/synthetic test entity",
+        "Zero tax rate applied (ZR) - bunker fuel zero-rated treatment noted as illustrative, not tax advice"
+      ],
+      "human_review_reasons": [],
+      "outcome": "READY_FOR_DECISION_INTELLIGENCE",
+      "reported_missing_fields": [],
+      "requires_human_review": false
+    },
+    "requested_workflow_run_id": "STRUCT-CORR-2CBC6CC15D7249CB8EE549B035F87E41",
+    "schema_validation_passed": true,
+    "source_extraction_method": "EMBEDDED_TEXT",
+    "source_text_character_count": 1347,
+    "source_text_sha256": "881b0ec294af66302e2f2abf16ac853ad6a60a8bebd2ec74d806a7c2a3985d06",
+    "structured_invoice": {
+      "bank_change_claimed": false,
+      "bank_details_present": false,
+      "contract_reference": "BUNKER-TST-2026-09",
+      "currency": "USD",
+      "customer_name": "TPC Ocean Transport Test Co. Ltd.",
+      "document_confidence": 0.98,
+      "due_date": "2026-09-17",
+      "extraction_warnings": [
+        "Invoice marked as fictional/synthetic test entity",
+        "Zero tax rate applied (ZR) - bunker fuel zero-rated treatment noted as illustrative, not tax advice"
+      ],
+      "gross_amount": 307400.0,
+      "invoice_date": "2026-08-18",
+      "invoice_direction": "AP",
+      "invoice_number": "NSMF-TST-260818-042",
+      "line_items": [
+        {
+          "confidence": 0.95,
+          "item_description": "VLSFO bunker fuel 0.50% max",
+          "line_amount": 305000.0,
+          "line_number": 1,
+          "quantity": 500.0,
+          "tax_rate": 0.0,
+          "unit_price": 610.0
+        },
+        {
+          "confidence": 0.95,
+          "item_description": "Bunker delivery and hose handling",
+          "line_amount": 2400.0,
+          "line_number": 2,
+          "quantity": 1.0,
+          "tax_rate": 0.0,
+          "unit_price": 2400.0
+        }
+      ],
+      "missing_mandatory_fields": [],
+      "payment_terms": "N30 - Net 30 days",
+      "purchase_order_reference": "PO-VYG-TST-2608-117",
+      "requires_human_review": false,
+      "subtotal": 307400.0,
+      "supplier_name": "Northstar Marine Fuels LLC",
+      "tax_amount": 0.0,
+      "vessel_imo": "IMO 9900042",
+      "vessel_name": "M/V Azure Meridian Test",
+      "voyage_reference": "AMR-V026-TST"
+    },
+    "validation_errors": []
+  },
+  "structured_extraction_completed_at": "2026-09-14T16:01:27.996478+00:00",
+  "decision_and_governance": {
+    "routing": {
+      "target_system": "VESON_IMOS",
+      "routing_status": "ROUTE_CANDIDATE",
+      "reason_code": "SINGLE_CATEGORY_MATCH",
+      "matched_categories": [
+        "BUNKER"
+      ],
+      "matched_evidence_terms": [
+        "bunker"
+      ],
+      "route_confidence": 0.9000000000000001,
+      "explanation": "Categories ['BUNKER'] map to VESON_IMOS",
+      "workflow_run_id": "ef1697b6-7738-4926-82fa-7a0f80029890"
+    },
+    "approval_authority": {
+      "invoice_id": "LOCAL-B970E86BB68E",
+      "correlation_id": "CORR-2CBC6CC15D7249CB8EE549B035F87E41",
+      "required_authorities": [
+        "L3_CONTROLLER"
+      ],
+      "approval_reasons": [
+        "AMOUNT_THRESHOLD"
+      ],
+      "highest_risk_level": "MEDIUM",
+      "total_risk_count": 1,
+      "requires_multi_approval": false,
+      "approval_chain_notes": "Amount $307400.00 exceeds clerk threshold",
+      "deterministic_hash": "dd7e01084edc7dfb"
+    },
+    "governance": {
+      "case_id": "LOCAL-B970E86BB68E",
+      "correlation_id": "CORR-2CBC6CC15D7249CB8EE549B035F87E41",
+      "proposed_target_system": "VESON_IMOS",
+      "evaluating_authority": "L3_CONTROLLER",
+      "required_authority": "L3_CONTROLLER",
+      "authority_outcome": "sufficient",
+      "governance_status": "HOLD",
+      "reason_code": "GOVERNANCE_PENDING",
+      "objective_id": "OBJ-LOCAL-B970E86BB68E",
+      "request_ids": [
+        "REQ-LOCAL-B970E86BB68E"
+      ],
+      "review_decision_ids": [
+        "REV-LOCAL-B970E86BB68E"
+      ],
+      "routing_workflow_run_id": "ef1697b6-7738-4926-82fa-7a0f80029890",
+      "explanation": "Aegis holding: Request REQ-LOCAL-B970E86BB68E has conditional approval"
+    },
+    "persistence": {
+      "outcome_status": "HOLD",
+      "decision_status": "HOLD",
+      "finance_decision_id": "fin-64c702dddcf2",
+      "audit_event_id": "aud-e799e48da65b",
+      "approval_request_id": "arq-6f3f897edc52",
+      "exception_case_id": null,
+      "invoice_id": "LOCAL-B970E86BB68E",
+      "correlation_id": "CORR-2CBC6CC15D7249CB8EE549B035F87E41",
+      "case_exists": true,
+      "is_replay": true,
+      "explanation": "Decision persisted: HOLD for LOCAL-B970E86BB68E"
+    }
+  },
+  "decision_and_governance_completed_at": "2026-09-15T02:20:34.914082+00:00",
+  "approval_and_posting": {
+    "approval": {
+      "approval_request_id": "arq-6f3f897edc52",
+      "invoice_id": "LOCAL-B970E86BB68E",
+      "correlation_id": "CORR-2CBC6CC15D7249CB8EE549B035F87E41",
+      "decision": "BLOCKED",
+      "approver_id": "demo-l3-controller",
+      "invoice_case_status": "PENDING",
+      "approval_request_status": "APPROVED",
+      "decided_at": "2026-09-15T04:09:30.022808+00:00",
+      "audit_event_id": "",
+      "exception_case_id": null,
+      "explanation": "Decision blocked due to immutability control",
+      "blocked_reason": "Cannot change APPROVED decision"
+    },
+    "posting": {
+      "posting_record_id": "",
+      "invoice_id": "LOCAL-B970E86BB68E",
+      "correlation_id": "CORR-2CBC6CC15D7249CB8EE549B035F87E41",
+      "posting_status": "BLOCKED",
+      "posting_reference": "",
+      "target_system": "",
+      "accounting_code": "",
+      "posted_at": "",
+      "workflow_run_id": "",
+      "explanation": "No FinanceDecision found: authorization required",
+      "audit_event_id": ""
+    },
+    "final_case_status": "APPROVED",
+    "approval_verified": false,
+    "posting_verified": false,
+    "completed_at": "2026-09-15T04:10:09.255967+00:00"
+  }
+}

@@ -1,5 +1,8 @@
 # Finance Invoice Processing System - Direct Dependencies
 #
+# Local SDK (editable install from workspace)
+-e /Users/pmayank/workspace/aegis-sdk
+
 # Kailash: Workflow orchestration and agent framework
 kailash==2.63.0
 kailash-dataflow==2.20.0
@@ -19,3 +22,4 @@ httpx-sse==0.4.3
 pymupdf==1.28.2
 pytesseract==0.3.13
 Pillow==11.2.0
+-e ./vendor/aegis-sdk

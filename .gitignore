@@ -26,3 +26,4 @@ htmlcov/
 # macOS and IDE
 .DS_Store
 .vscode/
+.env.aegis
